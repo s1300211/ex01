@@ -4,6 +4,11 @@ import java.util.Random;
 class DiceGame{
     public static void main(String[] args){
         
+        System.out.println("What is your name?");
+        Scanner sc = new Scanner(System.in);
+        String name = sc.next();
+        System.out.println("Hello, " + name + "!");
+
         int a=0;
         int b=0;
 
@@ -17,7 +22,7 @@ class DiceGame{
         System.out.println("Die 2: " + b);
         System.out.println("Total value: " + sum);
 
-        if(sum > 7) System.out.println("You won");
-        else System.out.println("You lost");
+        if(sum > 7) System.out.println(name + " won");
+        else System.out.println(name + " lost");
     }
 }
